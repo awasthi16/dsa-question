@@ -25,3 +25,63 @@ int main() {
 }
 
 //2.   pow(val, 2)  use in c++ and we use cmath ------------library in header
+//3.Trigonometry
+To perform trigonometric operations, the cmath library provides the functions sin​, cos and tan. Each of the three takes​ only one argument, the number, on which these operations need to be applied.
+float val = 5.7;
+sin(val)
+tan(val)
+cos(val)
+--------------------
+pow(x, y)    // x^y
+sqrt(x)      // √x (square root)
+cbrt(x)      // ∛x (cube root, C++11+)
+hypot(x, y)  // √(x² + y²) without overflow/underflow
+
+cout << pow(2, 3);   // 8
+cout << sqrt(16);    // 4
+cout << cbrt(27);    // 3
+
+---------------------------
+ceil(x)     // round up → 3.2 → 4
+floor(x)    // round down → 3.9 → 3
+round(x)    // round to nearest → 3.5 → 4
+trunc(x)    // remove fractional part → 3.9 → 3
+fabs(x)     // absolute value for float/double
+abs(x)      // absolute value (also works for int)
+fmod(x, y)  // remainder of x/y (floating-point)
+remainder(x,y) // IEEE remainder (closest multiple)
+-------------------------------------------
+cout << ceil(3.2);   // 4
+cout << floor(3.9);  // 3
+cout << round(3.5);  // 4
+cout << trunc(3.9);  // 3
+------------------------------
+exp(x)     // e^x
+exp2(x)    // 2^x
+log(x)     // natural log (ln x)
+log10(x)   // log base 10
+log2(x)    // log base 2 (C++11+)
+---------------------------
+cout << exp(1);      // 2.71828
+cout << log(2.71828);// ≈1
+cout << log10(100);  // 2
+-------------------------------
+sin(x)     // sine
+cos(x)     // cosine
+tan(x)     // tangent
+asin(x)    // arcsin (returns radians)
+acos(x)    // arccos
+atan(x)    // arctan
+atan2(y,x) // arctan(y/x) considering quadrant
+----------------------------------
+cout << sin(M_PI/2);   // 1
+cout << cos(0);        // 1
+cout << atan2(1, 1);   // 0.785 (π/4)
+-----------------------------
+fmin(x,y)    // smaller of x, y
+fmax(x,y)    // larger of x, y
+fdim(x,y)    // positive difference (x>y ? x-y : 0)
+copysign(x,y)// value of x with sign of y
+
+
+
