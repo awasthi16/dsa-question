@@ -1,5 +1,5 @@
 
-//this question is asked in interview bit in  setprecision(3) will show value after decimal.
+// 1.this question is asked in interview bit in  setprecision(3) will show value after decimal.
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -23,3 +23,5 @@ int main() {
 
     return 0;
 }
+
+//2.   pow(val, 2)  use in c++ and we use cmath ------------library in header
