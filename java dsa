@@ -1,0 +1,2 @@
+double avg =(double)sum/s;
+       return String.format("%.2f", avg);
