@@ -1,0 +1,80 @@
+1. Factorial of a Number
+
+Problem:
+Compute the factorial of a given number n.
+
+Input: 5
+Output: 120
+
+2. Fibonacci Sequence
+
+Problem:
+Print the first n Fibonacci numbers.
+
+Input: 6
+Output: 0 1 1 2 3 5
+
+3. Reverse a Number
+
+Problem:
+Given a number, print its digits in reverse order.
+
+Input: 12345
+Output: 54321
+
+4. Armstrong Number
+
+Problem:
+Check if a number is an Armstrong number (sum of cubes of digits = number itself).
+
+Input: 153
+Output: Yes
+
+5. Sum of Digits
+
+Problem:
+Compute the sum of all digits of a number.
+
+Input: 1234
+Output: 10
+
+6. Prime Number Check
+
+Problem:
+Check if a number is prime.
+
+Input: 17
+Output: Prime
+
+7. GCD of Two Numbers
+
+Problem:
+Find the greatest common divisor (GCD) of two numbers using loops.
+
+Input: 12 18
+Output: 6
+
+8. Count Number of Digits
+
+Problem:
+Count the number of digits in a number without using strings.
+
+Input: 12345
+Output: 5
+
+9. Sum of Even/Odd Numbers Till N
+
+Problem:
+Compute sum of all even numbers or all odd numbers up to n.
+
+Input: 10
+Output (even sum): 30
+Output (odd sum): 25
+
+10. Palindrome Number
+
+Problem:
+Check if a number is a palindrome using just loops and variables.
+
+Input: 121
+Output: Yes
