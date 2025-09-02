@@ -1,0 +1,147 @@
+#include <iostream>
+using namespace std;
+
+// 1. Square
+void square(int n) {
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 2. Right Triangle
+void rightTriangle(int n) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 3. Inverted Right Triangle
+void invertedRightTriangle(int n) {
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 4. Pyramid
+void pyramid(int n) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++) cout<<" ";
+        for(int j=1;j<=2*i-1;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 5. Inverted Pyramid
+void invertedPyramid(int n) {
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=n-i;j++) cout<<" ";
+        for(int j=1;j<=2*i-1;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 6. Diamond
+void diamond(int n) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++) cout<<" ";
+        for(int j=1;j<=2*i-1;j++) cout<<"*";
+        cout<<endl;
+    }
+    for(int i=n-1;i>=1;i--){
+        for(int j=1;j<=n-i;j++) cout<<" ";
+        for(int j=1;j<=2*i-1;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 7. Number Triangle
+void numberTriangle(int n) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++) cout<<j;
+        cout<<endl;
+    }
+}
+
+// 8. Floyd’s Triangle
+void floydsTriangle(int n) {
+    int num=1;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++) cout<<num++<<" ";
+        cout<<endl;
+    }
+}
+
+// 9. Pascal’s Triangle
+void pascalTriangle(int n) {
+    for(int i=0;i<n;i++){
+        int num=1;
+        for(int j=0;j<n-i-1;j++) cout<<" ";
+        for(int j=0;j<=i;j++){
+            cout<<num<<" ";
+            num = num*(i-j)/(j+1);
+        }
+        cout<<endl;
+    }
+}
+
+// 10. Butterfly
+void butterfly(int n) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++) cout<<"*";
+        for(int j=1;j<=2*(n-i);j++) cout<<" ";
+        for(int j=1;j<=i;j++) cout<<"*";
+        cout<<endl;
+    }
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++) cout<<"*";
+        for(int j=1;j<=2*(n-i);j++) cout<<" ";
+        for(int j=1;j<=i;j++) cout<<"*";
+        cout<<endl;
+    }
+}
+
+// 11. Hollow Square
+void hollowSquare(int n) {
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if(i==1||i==n||j==1||j==n) cout<<"*";
+            else cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+// 12. Checkerboard
+void checkerboard(int n) {
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if((i+j)%2==0) cout<<"*";
+            else cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+int main() {
+    int n;
+    cout<<"Enter size (e.g., 5): ";
+    cin>>n;
+
+    cout<<"\n1. Square\n"; square(n);
+    cout<<"\n2. Right Triangle\n"; rightTriangle(n);
+    cout<<"\n3. Inverted Right Triangle\n"; invertedRightTriangle(n);
+    cout<<"\n4. Pyramid\n"; pyramid(n);
+    cout<<"\n5. Inverted Pyramid\n"; invertedPyramid(n);
+    cout<<"\n6. Diamond\n"; diamond(n);
+    cout<<"\n7. Number Triangle\n"; numberTriangle(n);
+    cout<<"\n8. Floyd’s Triangle\n"; floydsTriangle(n);
+    cout<<"\n9. Pascal’s Triangle\n"; pascalTriangle(n);
+    cout<<"\n10. Butterfly\n"; butterfly(n);
+    cout<<"\n11. Hollow Square\n"; hollowSquare(n);
+    cout<<"\n12. Checkerboard\n"; checkerboard(n);
+
+    return 0;
+}
