@@ -1,0 +1,143 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Declare vectors
+    vector<int> v;                 // empty vector
+    vector<int> v2(5, 100);        // 5 elements with value 100
+    vector<int> v3 = {1, 2, 3, 4}; // initializer list
+
+    // Add elements
+    v.push_back(10);
+    v.push_back(20);
+    v.emplace_back(30); // same as push_back but faster
+
+    // Access elements
+    cout << "First element: " << v.front() << endl;
+    cout << "Last element: " << v.back() << endl;
+    cout << "At index 1: " << v.at(1) << endl;
+
+    // Size and capacity
+    cout << "Size: " << v.size() << endl;
+    cout << "Capacity: " << v.capacity() << endl;
+    cout << "Is empty? " << (v.empty() ? "Yes" : "No") << endl;
+
+    // Insert elements
+    v.insert(v.begin(), 5); // insert at beginning
+    v.insert(v.begin() + 2, 15); // insert at index 2
+
+    // Erase elements
+    v.erase(v.begin() + 1); // remove element at index 1
+
+    // Iterate (normal loop)
+    cout << "Vector elements (for loop): ";
+    for (size_t i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+
+    // Iterate (iterator)
+    cout << "Vector elements (iterator): ";
+    for (auto it = v.begin(); it != v.end(); it++) {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    // Iterate (range-based for loop)
+    cout << "Vector elements (range-based): ";
+    for (int x : v) {
+        cout << x << " ";
+    }
+    cout << endl;
+
+    // Pop element
+    v.pop_back();
+
+    // Swap vectors
+    v.swap(v2);
+
+    cout << "After swap, v contains: ";
+    for (int x : v) cout << x << " ";
+    cout << endl;
+
+    // Assign values
+    v.assign(4, 42); // 4 copies of 42
+    cout << "After assign, v contains: ";
+    for (int x : v) cout << x << " ";
+    cout << endl;
+
+    // Clear vector
+    v.clear();
+    cout << "After clear, size: " << v.size() << endl;
+
+    return 0;
+}
+
+
+
+      🟢 Beginner (Basics)
+
+Create a vector of size 5 and take input from the user, then print all elements.
+
+Initialize a vector with {1,2,3,4,5} and print its size and capacity.
+
+Insert an element 10 at the beginning of a vector.
+
+Insert 99 at the 3rd index of a vector.
+
+Delete the last element of a vector using pop_back().
+
+Delete the element at index 2 using erase().
+
+Replace all elements of a vector with the value 7 using assign().
+
+Check whether a vector is empty or not.
+
+Create two vectors and swap their contents.
+
+Print the first and last element of a vector using front() and back().
+
+🟡 Intermediate (Iteration & Operations)
+
+Take n integers as input into a vector and print them using an iterator.
+
+Reverse a vector using reverse() from <algorithm>.
+
+Sort a vector in ascending order.
+
+Sort a vector in descending order.
+
+Find the maximum and minimum element in a vector using *max_element and *min_element.
+
+Count how many times a number x occurs in a vector.
+
+Remove all even numbers from a vector.
+
+Merge two vectors into a third vector.
+
+Create a copy of one vector into another.
+
+Find the sum of all elements in a vector.
+
+🔴 Advanced (Competitive Programming Style)
+
+Rotate a vector k times to the right.
+
+Find the second largest element in a vector.
+
+Find if a vector contains duplicates.
+
+Remove duplicates from a vector (keep only unique values).
+
+Given a vector, shift all zeros to the end while maintaining order of other elements.
+
+Find the frequency of each element in a vector.
+
+Find the majority element (element appearing more than n/2 times) in a vector.
+
+Check if the vector is a palindrome (same forward and backward).
+
+Given two sorted vectors, merge them into one sorted vector.
+
+Implement binary search on a vector (without using STL binary_search).
