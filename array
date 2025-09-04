@@ -1,0 +1,65 @@
+🔹 Beginner Array Questions
+
+Input and print all elements of an array.
+
+Find the maximum element in an array.
+
+Find the minimum element in an array.
+
+Find the sum of all elements in an array.
+
+Find the average of array elements.
+
+Search an element in an array (linear search).
+
+Count the frequency of a given element.
+
+Count even and odd elements in an array.
+
+Reverse an array.
+
+Copy one array into another.
+
+🔹 Slightly Intermediate
+
+Find the second largest element in an array.
+
+Find the second smallest element in an array.
+
+Sort an array in ascending order.
+
+Sort an array in descending order.
+
+Find the missing number in an array (1 to N).
+
+Count duplicate elements in an array.
+
+Remove duplicates from an array.
+
+Merge two arrays into one.
+
+Find the intersection of two arrays.
+
+Find the union of two arrays.
+
+🔹 Trickier Ones
+
+Rotate array by K positions.
+
+Find subarray with maximum sum (Kadane’s Algorithm).
+
+Move all zeroes to the end of array.
+
+Find leaders in an array (element greater than all to its right).
+
+Find equilibrium index (where left sum = right sum).
+
+Check if array is palindrome.
+
+Find majority element (appears more than n/2 times).
+
+Find pairs with a given sum.
+
+Find triplets with a given sum.
+
+Rearrange positive and negative numbers alternately.
