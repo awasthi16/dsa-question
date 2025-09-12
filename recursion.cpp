@@ -18,7 +18,7 @@ Count the number of digits in a number using recursion.
 
 Find the power of a number (a^b) using recursion.
 
-🔹 Intermediate Level (11–20)
+
 
 Check if a string is palindrome using recursion.
 
@@ -40,7 +40,7 @@ Print all subsets of a string using recursion.
 
 Print all subsets of an array using recursion.
 
-🔹 Advanced Level (21–30)
+
 
 Solve the Tower of Hanoi problem using recursion.
 
