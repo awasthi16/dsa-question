@@ -1,0 +1,101 @@
+1. What is Time Complexity?
+
+Time Complexity tells how the running time of an algorithm increases as the input size increases.
+
+It is measured in terms of number of steps/operations, not actual seconds (since hardware speed differs).
+
+Expressed in Big-O Notation → it shows the worst-case growth rate.
+-------------
+Helps compare algorithms independently of hardware.
+
+Predicts performance for large input sizes.
+
+Example: Sorting 10 numbers is fast with any method. But sorting 1 billion numbers → algorithm choice matters a lot.
+
+Big-O Notation (Common Types)
+ O(1) → Constant Time
+
+Work does not grow with input size.
+arr = [10, 20, 30]
+print(arr[0])   # Always 1 step
+---------------------------
+O(n) → Linear Time
+
+Work grows directly with input size.
+for x in arr:
+    print(x)
+10 elements → 10 steps
+1000 elements → 1000 steps
+--------------------------
+O(n²) → Quadratic Time
+
+Work grows like a square of input. (Nested loops)
+for i in arr:
+    for j in arr:
+        print(i, j)
+10 elements → 100 steps
+1000 elements → 1,000,000 steps
+-------------------------
+O(log n) → Logarithmic Time
+
+Input is divided by 2 (or similar) each step.
+
+Common in Binary Search.
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+16 elements → max 4 steps
+1024 elements → max 10 steps
+-----------------------------------------
+O(n log n) → Linearithmic Time
+
+Appears in efficient sorting (Merge Sort, Quick Sort).
+
+Faster than O(n²).
+Sorting 1000 items takes ~1000 × log(1000) ≈ 10,000 steps
+------------------------
+O(2ⁿ) → Exponential Time
+
+Each increase in input doubles the work.
+
+Example: Recursive Fibonacci.
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+n=10 → ~1000 calls
+n=50 → ~1 trillion calls 
+--------------------------------------
+O(n!) → Factorial Time
+
+Worst growth rate → permutations, brute force traveling salesman problem.
+ n=5 → 120 steps
+n=10 → 3.6 million steps
+--------------------------
+Big-O Rules
+
+Ignore constants → O(2n) = O(n)
+
+Take dominant term → O(n² + n) = O(n²)
+
+Nested loops multiply, sequential steps add
+
+-----------------------
+. Real-life Analogies
+
+O(1): Opening the fridge → same time whether full or empty.
+
+O(n): Looking for a name in an unsorted list → check each one.
+
+O(log n): Looking for a word in a dictionary → keep halving search.
+
+O(n²): Comparing every student with every other student.
+Always try to aim for O(1), O(log n), or O(n) instead of O(n²), O(2ⁿ), O(n!).
+--------------------------------------
